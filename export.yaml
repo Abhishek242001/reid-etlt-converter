@@ -1,0 +1,25 @@
+inference_config:
+  # Input dimensions for ReIdentificationNet (fixed)
+  input_width: 128
+  input_height: 256
+  input_channels: 3
+
+export_config:
+  # Output ONNX file path (inside container = /workspace/onnx_model/)
+  output_model: /workspace/onnx_model/resnet50_reid.onnx
+  on_gpu: true
+
+reid_config:
+  backbone: resnet_50
+  last_stride: 1
+  pretrain_choice: imagenet
+  input_channels: 3
+  input_width: 128
+  input_height: 256
+  neck: bnneck
+  feat_dim: 256
+  neck_feat: after
+  metric_loss_type: triplet
+  with_center_loss: false
+  with_flip_feature: false
+  label_smooth: true

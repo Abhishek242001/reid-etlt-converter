@@ -1,0 +1,7 @@
+PUT YOUR .etlt FILE IN THIS FOLDER
+
+Example:
+  resnet50_market1501_aicity156.etlt
+
+Then run:
+  ./setup.sh

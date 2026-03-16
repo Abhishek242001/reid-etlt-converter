@@ -1,0 +1,7 @@
+ONNX and TensorRT engine files will be saved here automatically.
+
+After setup.sh:
+  resnet50_reid.onnx
+
+After convert_to_tensorrt.sh:
+  resnet50_reid.engine
